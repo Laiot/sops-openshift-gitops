@@ -55,6 +55,7 @@ repo:
    - mountPath: /.config/sops/age/keys.txt
      name: sops-age
      subPath: keys.txt
+  kustomizeBuildOptions: --enable-alpha-plugins
 ```
 
 + Wait for a new openshift-gitops-repo-server pod to be created and started: \
