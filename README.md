@@ -1,11 +1,14 @@
 # Using Openshift Gitops to manage Secrets with SOPS
 
+How to integrate [SOPS](https://github.com/getsops/sops) with [Openshift Gitops Operator](https://www.redhat.com/en/technologies/cloud-computing/openshift/gitops) using the [Kustomize](https://kustomize.io/) plugin known as [KSOPS](https://github.com/viaduct-ai/kustomize-sops). \
+This guide is deeply inspired by [Vikas Pogu](https://vikaspogu.dev/) Red Hat blog article about the same topic.
+
 ## Prerequisites
 + Openshift 4 Cluster with Gitops operator installed
 + oc tool locally installed
 + Kustomize CLI locally installed
 + SOPS CLI locally installed
-+ Age file encryption tool installed
++ [Age](https://github.com/FiloSottile/age) file encryption tool installed
 
 ## How to use
 + Generate a new key with the age tool: \
